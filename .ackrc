@@ -1,2 +1,4 @@
 --ignore-dir=.idea
+--ignore-dir=bower_components
+--type-set=jsx=.jsx
 --smart-case

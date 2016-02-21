@@ -173,3 +173,7 @@ export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
 export WORKON_HOME="~/code/.virtualenv"
 source /usr/local/bin/virtualenvwrapper.sh
+
+#export PYTHONSTARTUP=$HOME/.python_startup
+
+alias git-clean="git branch --merged master | grep -v '\* master' | xargs -n 1 git branch -d"

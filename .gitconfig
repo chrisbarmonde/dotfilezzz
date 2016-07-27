@@ -13,3 +13,5 @@
     lu = "!git log \"$(git rev-parse --abbrev-ref HEAD)\""
     gpristine="!git reset --hard && git clean -df"
     branchclean="!git branch --merged | grep -v \"\\*\" | grep -v master | grep -v stage | xargs -n 1 git branch -d"
+[rerere]
+	enabled = true

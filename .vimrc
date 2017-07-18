@@ -14,7 +14,3 @@ set smarttab
 set hlsearch
 syntax on
 set bg=dark
-
-# For vim-less
-call pathogen#infect()
-nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>

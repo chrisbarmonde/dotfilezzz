@@ -167,12 +167,12 @@ else
      start_agent;
 fi
 
-export NODE_PATH="/usr/local/lib/node"
-export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
+# export NODE_PATH="/usr/local/lib/node"
+# export PATH="/usr/local/bin:$PATH:/usr/local/share/npm/bin"
 export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
 
-export WORKON_HOME="~/code/.virtualenv"
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME="~/code/.virtualenv"
+# source /usr/local/bin/virtualenvwrapper.sh
 
 #export PYTHONSTARTUP=$HOME/.python_startup
 

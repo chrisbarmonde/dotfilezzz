@@ -12,6 +12,10 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
     lu = "!git log \"$(git rev-parse --abbrev-ref HEAD)\""
     gpristine="!git reset --hard && git clean -df"
-    branchclean="!git branch --merged | grep -v \"\\*\" | grep -v master | grep -v stage | xargs -n 1 git branch -d"
+    branchclean="!git branch --merged | grep -v \"\\*\" | grep -v master | xargs -n 1 git branch -d"
 [rerere]
 	enabled = true
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f

@@ -14,3 +14,4 @@ set smarttab
 set hlsearch
 syntax on
 set bg=dark
+
